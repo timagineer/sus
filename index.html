@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 
+<!--
+https://digital.ahrq.gov/sites/default/files/docs/survey/systemusabilityscale%2528sus%2529_comp%255B1%255D.pdf
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9437782/
+https://mhealth.jmir.org/2022/8/e37290
+https://www.interaction-design.org/literature/article/system-usability-scale?srsltid=AfmBOopI5gfdZMU9agfnWB8F25EBP9HsT4Lz9ixHK0mO-6slMRupngi1
+https://www.nngroup.com/articles/measuring-perceived-usability/
+ -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -302,7 +310,6 @@
         <h1 class="c-title">ICANotes+ System Usability Scale</h1>
         <p class="c-subtitle">Please rate your agreement with each statement</p>
     </header>
-
     <main class="l-container">
         <form id="js-sus-form" class="l-stack" action="https://formkeep.com/f/1bce135e0785" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
             <fieldset class="c-question" id="js-q1">
@@ -330,7 +337,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q2">
                 <legend class="c-legend">I found the system unnecessarily complex.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -356,7 +362,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q3">
                 <legend class="c-legend">I thought the system was easy to use.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -382,7 +387,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q4">
                 <legend class="c-legend">I think that I would need the support of a technical person to be able to use this system.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -408,7 +412,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q5">
                 <legend class="c-legend">I found the various functions in this system were well integrated.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -434,7 +437,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q6">
                 <legend class="c-legend">I thought there was too much inconsistency in this system.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -460,7 +462,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q7">
                 <legend class="c-legend">I would imagine that most people would learn to use this system very quickly.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -486,7 +487,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q8">
                 <legend class="c-legend">I found the system very cumbersome to use.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -512,7 +512,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q9">
                 <legend class="c-legend">I felt very confident using the system.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -538,7 +537,6 @@
                     </div>
                 </div>
             </fieldset>
-
             <fieldset class="c-question" id="js-q10">
                 <legend class="c-legend">I needed to learn a lot of things before I could get going with this system.</legend>
                 <div class="c-radio-group" role="radiogroup" aria-required="true">
@@ -564,17 +562,13 @@
                     </div>
                 </div>
             </fieldset>
-
-            <div role="alert" class="c-alert c-alert--error" id="js-error" hidden aria-live="polite"></div>
-
-            <input type="hidden" name="sus_score" id="js-sus-score-input">
-            <input type="hidden" name="sus_interpretation" id="js-sus-interpretation-input">
-
             <div class="c-submit">
                 <button type="submit" class="c-button">Submit Survey</button>
             </div>
+            <div role="alert" class="c-alert c-alert--error" id="js-error" hidden aria-live="polite"></div>
+            <input type="hidden" name="sus_score" id="js-sus-score-input">
+            <input type="hidden" name="sus_interpretation" id="js-sus-interpretation-input">
         </form>
-
         <div id="js-results" hidden>
             <div class="c-score">
                 <div class="c-score__number" id="js-score-number"></div>
